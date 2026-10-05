@@ -17,7 +17,7 @@ app.use("/api/registrations", require("./routes/registrations"));
 app.use(errors.notFound);      // 2. unknown URL: 404
 app.use(errors.errorHandler);  // 3. any error: JSON
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.mongodb+srv:akash:akash121233@cluster0.3yv6w.mongodb.net/?appName=Cluster0)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("DB error:", err.message));
 
