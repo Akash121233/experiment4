@@ -1,8 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API = "https://experiment4-wkhk.onrender.com/api"
-
+const API = import.meta.env.VITE_API_URL || "http://loccalhost:5000/api";
+ 
 function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
